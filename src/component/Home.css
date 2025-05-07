@@ -14,3 +14,17 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+#sign-in {
+  display: flex;
+  justify-self: flex-end;
+  margin-right: 2%;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#sign-in:hover {
+  color: rgb(255, 123, 123);
+  cursor: pointer;
+}

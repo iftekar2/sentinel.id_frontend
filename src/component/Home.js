@@ -17,7 +17,14 @@ function Home() {
     setTotalPoints((prev) => Math.min(MAX_POINTS, prev + points));
   };
 
+  const authfrontend = () => {
+    window.location.assign("http://localhost:3001/")
+  }
+
   return (
+  <>
+
+    <input type="button" id="sign-in" value="Sign-In" onClick={authfrontend}/>    
     <div className="HomeClass">
       <div className="home">
         <div className="title">
@@ -36,6 +43,7 @@ function Home() {
       </div>
       <PointsBar currentPoints={totalPoints} maxPoints={MAX_POINTS} />
     </div>
+  </>
   );
 }
 
